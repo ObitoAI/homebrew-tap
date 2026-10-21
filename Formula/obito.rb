@@ -6,10 +6,10 @@ class Obito < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.4/obito_v0.1.4_darwin_arm64.tar.gz"
-      sha256 "6c73d645d945a7b8c33b85bbdec9792c13aa3bffb02a742616404bb5e6ff2318"
+      sha256 "7445052ba246fc3ec5340a22957edc13afbd56806ab6b3c0e7c23e4c0ff468a3"
     else
       url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.4/obito_v0.1.4_darwin_amd64.tar.gz"
-      sha256 "fe910405db99d4b5a211d4489ec4c2ed18ad5dc40e34041a099e824fe1b79719"
+      sha256 "1d78b77f7db33cadda8a971797d5dbd3e2652c46cc978551eefdcba924e0867b"
     end
   end
 
