@@ -6,10 +6,20 @@ class Obito < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_darwin_arm64.tar.gz"
-      sha256 "93785e0b79e0c9de91d1cb65d41fad828de704bb028b82db9f5e98a0a803836d"
+      sha256 "a3a116cf5a5c936cbf46c4b14c42f7c0cc480c99d2d4142d3455aca897bf39d9"
     else
       url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_darwin_amd64.tar.gz"
-      sha256 "a9d97f91e0bb62d045e715b47807f61a2bf7efd4689a450c81e109d9e3cbdeff"
+      sha256 "77939a124194da7b26104660d1425946de6605948e539ac86bcec1503b52af61"
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm?
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_linux_arm64.tar.gz"
+      sha256 "493451f739c077008f7370ac7190c02154fc30241d4a9b2736b6efa0561b1a6e"
+    else
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_linux_amd64.tar.gz"
+      sha256 "5e051eefc5ca448b4a45b4bbd94901db2d35b3b04827d0a0bd2c1474ce9474e5"
     end
   end
 
