@@ -1,15 +1,15 @@
 class Obito < Formula
   desc "Obito interactive session client"
   homepage "https://github.com/ObitoAI/Obito"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.4/obito_v0.1.4_darwin_arm64.tar.gz"
-      sha256 "7445052ba246fc3ec5340a22957edc13afbd56806ab6b3c0e7c23e4c0ff468a3"
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_darwin_arm64.tar.gz"
+      sha256 "93785e0b79e0c9de91d1cb65d41fad828de704bb028b82db9f5e98a0a803836d"
     else
-      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.4/obito_v0.1.4_darwin_amd64.tar.gz"
-      sha256 "1d78b77f7db33cadda8a971797d5dbd3e2652c46cc978551eefdcba924e0867b"
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_darwin_amd64.tar.gz"
+      sha256 "a9d97f91e0bb62d045e715b47807f61a2bf7efd4689a450c81e109d9e3cbdeff"
     end
   end
 
@@ -18,6 +18,6 @@ class Obito < Formula
   end
 
   test do
-    assert_equal "v0.1.4", shell_output("#{bin}/obito version").strip
+    assert_equal "v0.1.5", shell_output("#{bin}/obito version").strip
   end
 end
