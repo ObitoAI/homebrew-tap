@@ -1,25 +1,25 @@
 class Obito < Formula
   desc "Obito interactive session client"
   homepage "https://github.com/ObitoAI/Obito"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_darwin_arm64.tar.gz"
-      sha256 "a3a116cf5a5c936cbf46c4b14c42f7c0cc480c99d2d4142d3455aca897bf39d9"
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.6/obito_v0.1.6_darwin_arm64.tar.gz"
+      sha256 "6d13b50373ab24ee9cc0305733a89f30c15038cd8c2457bd7c70f695a5dc582e"
     else
-      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_darwin_amd64.tar.gz"
-      sha256 "77939a124194da7b26104660d1425946de6605948e539ac86bcec1503b52af61"
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.6/obito_v0.1.6_darwin_amd64.tar.gz"
+      sha256 "3c8cf21233b4957b09e679a04a951fae0cb07ffb213966163cc52db8fefe8282"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_linux_arm64.tar.gz"
-      sha256 "493451f739c077008f7370ac7190c02154fc30241d4a9b2736b6efa0561b1a6e"
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.6/obito_v0.1.6_linux_arm64.tar.gz"
+      sha256 "5715ee808ffd1592b2d04ed5ae4502f55b07622469e44d3e9293f7c57dbc82f5"
     else
-      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.5/obito_v0.1.5_linux_amd64.tar.gz"
-      sha256 "5e051eefc5ca448b4a45b4bbd94901db2d35b3b04827d0a0bd2c1474ce9474e5"
+      url "https://github.com/ObitoAI/obito-releases/releases/download/v0.1.6/obito_v0.1.6_linux_amd64.tar.gz"
+      sha256 "e5ec851b8c120bd597b4d480c6b9c05efc503e8e7bd399bc5aeacd07af221b41"
     end
   end
 
@@ -28,6 +28,6 @@ class Obito < Formula
   end
 
   test do
-    assert_equal "v0.1.5", shell_output("#{bin}/obito version").strip
+    assert_equal "v0.1.6", shell_output("#{bin}/obito version").strip
   end
 end
